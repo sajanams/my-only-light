@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Best Friend</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="greeting">
+            <h1>For the one who made my life better</h1>
+            <p>You’re always the best for me, and no matter what, you’re forever the most beautiful in my eyes.</p>
+            <p> Love you, always and forever.</p>
+        </div>
+    </header>
+
+    <div id="cat-container">
+        <img id="cat-img" class="cat-img" src="cat.png" alt="Cute Walking Cat">
+    </div>
+    
+    <div class="nav-buttons">
+        <!-- <button class="nav-btn" data-target="images-page">View Images</button> -->
+        <button class="nav-btn" data-target="music-page">click here</button>
+    </div>
+    
+   
+
+    <!-- Images Page -->
+    <div id="images-page" class="page">
+        <h2>Our Favorite Moments</h2>
+        <img src="images/photo1.jpg" alt="Memory 1" class="cat-img">
+        <img src="images/photo2.jpg" alt="Memory 2" class="cat-img">
+        <button class="nav-btn" data-target="music-page">Next Page</button>
+    </div>
+
+    <!-- Music Page -->
+    <div id="music-page" class="page">
+        <h2>A Song Just written for You</h2>
+        
+        <p>Just a little something to remind you how much you mean to me. </p>
+        <button class="nav-btn" onclick="window.location.href='heart.html'">listen</button> <!-- Button with onclick -->
+
+    </div>
+
+    <audio id="meow-sound">
+        <source src="cat-meow-6226.mp3" type="audio/mp3">
+    </audio>
+
+    <footer>
+        <!-- <p>Made with love and paws by [Your Name]</p> -->
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
